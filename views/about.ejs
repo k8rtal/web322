@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Lego Collection</title>
+    <link href="/css/main.css" rel="stylesheet" />
+  </head>
+  <body class="bg-base-100 text-base-content">
+    <!-- updated navbar -->
+    <%- include('./partials/navbar', { page: '/about' }) %>
+
+    <!-- hero section -->
+    <div class="hero bg-base-200 rounded-lg p-6">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">About</h1>
+          <p class="py-6">About Me</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto p-6">
+      <div
+        class="bg-base-200 p-6 rounded-lg shadow-lg grid grid-cols-1 md:grid-cols-2 gap-4"
+      >
+        <div>
+          <img
+            src="https://www.bulletproof.co.uk/assets/header-backgrounds/blogs/how-hackers-hide-hero-52b3e92ac080797e72b8407403fcd6d898fe2314fda5d8924650a07567828835.png"
+            alt="Image"
+            class="w-full rounded-lg shadow-lg"
+          />
+        </div>
+        <div>
+          <p>
+            Hi, I'm Arshia K.M. I'm currently a 3rd-semester student with a
+            passion for coding in C++, backend development, and working with
+            databases.
+          </p>
+          <p>
+            In my free time, I enjoy playing games and working on random coding
+            projects!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

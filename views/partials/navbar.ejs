@@ -1,0 +1,98 @@
+<nav class="navbar bg-neutral text-base-content shadow-lg">
+  <div class="navbar-start">
+    <a
+      class="btn btn-ghost normal-case text-xl text-primary hover:text-accent"
+      href="/"
+      >Lego Collection</a
+    >
+  </div>
+
+  <!-- Align links to the right -->
+  <div class="navbar-center hidden lg:flex ml-auto space-x-4 justify-end">
+    <!-- Home link -->
+    <a
+      class="btn bg-primary text-black hover:bg-secondary <%= page === '/' ? 'active' : '' %>"
+      href="/"
+      >Home</a
+    >
+
+    <!-- View Collection link -->
+    <a
+      class="btn bg-primary text-black hover:bg-secondary <%= page === '/lego/sets' ? 'active' : '' %>"
+      href="/lego/sets"
+      >View Collection</a
+    >
+
+    <!-- Add to Collection link -->
+    <a
+      class="btn bg-primary text-black hover:bg-secondary <%= page === '/lego/addSet' ? 'active' : '' %>"
+      href="/lego/addSet"
+      >Add to Collection</a
+    >
+
+    <!-- About link -->
+    <a
+      class="btn bg-primary text-black hover:bg-secondary <%= page === '/about' ? 'active' : '' %>"
+      href="/about"
+      >About</a
+    >
+  </div>
+
+  <!-- Responsive navbar adjustment -->
+  <div class="navbar-end lg:hidden">
+    <div class="dropdown">
+      <label
+        tabindex="0"
+        class="btn btn-ghost text-base-content hover:bg-secondary"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </label>
+      <ul
+        tabindex="0"
+        class="dropdown-content menu p-2 shadow bg-neutral rounded-box w-52"
+      >
+        <li>
+          <a
+            href="/"
+            class="bg-primary text-black hover:bg-secondary <%= page === '/' ? 'active' : '' %>"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/lego/sets"
+            class="bg-primary text-black hover:bg-secondary <%= page === '/lego/sets' ? 'active' : '' %>"
+            >View Collection</a
+          >
+        </li>
+        <li>
+          <a
+            href="/lego/addSet"
+            class="bg-primary text-black hover:bg-secondary <%= page === '/lego/addSet' ? 'active' : '' %>"
+            >Add to Collection</a
+          >
+        </li>
+        <li>
+          <a
+            href="/about"
+            class="bg-primary text-black hover:bg-secondary <%= page === '/about' ? 'active' : '' %>"
+            >About</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
